@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="/js/doraemon.js"></script>
+    <title>Exhibit->Doraemon</title>
+  </head>
+  <body>
+    <div class="doraemon">
+      <div class="home-page" id="home">
+        <div class="menu">
+          <p>Doraemon</p>
+          <img src="/img/Doraemon/home/toMenu.png" onclick="goRight()" />
+        </div>
+        <div class="main">
+          <a href="/doraemon/introduce/suneo">
+            <img src="/img/Doraemon/home/suneo.png" />
+          </a>
+          <a href="/doraemon/introduce/shizuka">
+            <img src="/img/Doraemon/home/shizuka.png" />
+          </a>
+          <a href="/doraemon/introduce/doraemon">
+            <img src="/img/Doraemon/home/doraemon.png" />
+          </a>
+          <a href="/doraemon/introduce/nobita">
+            <img src="/img/Doraemon/home/nobita.png" />
+          </a>
+          <a href="/doraemon/introduce/gian">
+            <img src="/img/Doraemon/home/gian.png" />
+          </a>
+        </div>
+      </div>
+      <div class="menu-page" id="menu">
+        <div class="bell">
+          <hr class="lineTop" size="6" color="#0000" />
+          <img src="/img/Doraemon/menu/bell.png" alt="" />
+          <hr class="lineTop" size="6" color="#0000" />
+        </div>
+        <div class="thing">
+          <div>
+            <a href="/">
+              <img src="/img/Doraemon/menu/fly.png" />
+              <p>退出</p>
+            </a>
+          </div>
+          <div>
+            <a href="/doraemon">
+              <img src="/img/Doraemon/menu/anyDoor.png" />
+              <p>回首頁</p>
+            </a>
+          </div>
+          <div>
+            <a href="/doraemon/people">
+              <img src="/img/Doraemon/menu/toast.png" />
+              <p>角色列表</p>
+            </a>
+          </div>
+          <div onclick="goLeft()">
+            <img src="/img/Doraemon/menu/damn.png" />
+            <p>算了、算了</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</html>

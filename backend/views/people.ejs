@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="/js/doraemon.js"></script>
+    <title>Doraemon-people</title>
+  </head>
+  <bdy>
+    <div class="doraemon">
+      <div class="people" id="home">
+        <div class="navbar">
+          <ul>
+            <li><a href="/doraemon/people/future">來自22世紀</a></li>
+            <li><a href="/doraemon/people/nobita">大雄家</a></li>
+            <li><a href="/doraemon/people/shizuka">靜香家</a></li>
+            <li>
+              <img src="/img/Doraemon/people/people.png" onclick="goRight()" />
+            </li>
+            <li><a href="/doraemon/people/gian">胖虎家</a></li>
+            <li><a href="/doraemon/people/suneo">小夫家</a></li>
+            <li class="none">
+              <a href="/doraemon/people/other">學校＆其他</a>
+            </li>
+          </ul>
+        </div>
+        <% if(data.length>7){ %>
+        <div class="two-items">
+          <div class="team">
+            <p><%= data[0].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[0].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <div class="team none">
+            <p><%= data[1].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[1].people_img %>.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="three-items">
+          <% for(let i=2; i<=7; i++){ %> <% if((i-4)%3!=0){ %>
+          <div class="team">
+            <p><%= data[i].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[i].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <% } %> <% if((i-4)%3==0){ %>
+          <div class="team none">
+            <p><%= data[i].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[i].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <% } %> <% } %>
+        </div>
+
+        <div class="four-items">
+          <% for(let i=8; i<=data.length-1; i++){ %> <% if((i+1)%4!=0&&i<21){ %>
+          <div class="team">
+            <p><%= data[i].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[i].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <% } %> <% if((i+1)%4==0||i==22){ %>
+          <div class="team none">
+            <p><%= data[i].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[i].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <% } %> <% if(i==21){ %>
+          <div class="team large">
+            <p><%= data[i].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[i].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <% } %> <% } %>
+        </div>
+        <% } %> <% if(data.length>3 && data.length<=7){ %>
+        <div class="four-items">
+          <% for(let i=0; i<=data.length-1; i++){ %> <% if((i+1)%4!=0 && i<5){
+          %>
+          <div class="team">
+            <p><%= data[i].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[i].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <% } %> <% if((i+1)%4==0 || i==6){ %>
+          <div class="team none">
+            <p><%= data[i].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[i].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <% } %> <% if(i==5){ %>
+          <div class="team large">
+            <p><%= data[i].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[i].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <% } %> <% } %>
+        </div>
+        <% } %> <% if(data.length == 3){ %>
+        <div class="three-items">
+          <% for(let i=0; i<=data.length-1; i++){ %> <% if((i+1)%3!=0){ %>
+          <div class="team">
+            <p><%= data[i].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[i].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <% } %> <% if((i+1)%3==0){ %>
+          <div class="team none">
+            <p><%= data[i].name %></p>
+            <img
+              src="/img/Doraemon/people/<%= data[i].people_img %>.png"
+              alt=""
+            />
+          </div>
+          <% } %> <% } %>
+        </div>
+        <% } %>
+      </div>
+      <div class="menu-page" id="menu">
+        <div class="bell">
+          <hr class="lineTop" size="6" color="#0000" />
+          <img src="/img/Doraemon/menu/bell.png" alt="" />
+          <hr class="lineTop" size="6" color="#0000" />
+        </div>
+        <div class="thing">
+          <div>
+            <a href="/">
+              <img src="/img/Doraemon/menu/fly.png" />
+              <p>退出</p>
+            </a>
+          </div>
+          <div>
+            <a href="/doraemon">
+              <img src="/img/Doraemon/menu/anyDoor.png" />
+              <p>回首頁</p>
+            </a>
+          </div>
+          <div>
+            <a href="/doraemon/people">
+              <img src="/img/Doraemon/menu/toast.png" />
+              <p>角色列表</p>
+            </a>
+          </div>
+          <div onclick="goLeft()">
+            <img src="/img/Doraemon/menu/damn.png" />
+            <p>算了、算了</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </bdy>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</html>
