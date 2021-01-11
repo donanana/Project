@@ -1,0 +1,132 @@
+// ========== People ================================================
+.doraemon{
+  width: 200%;
+  // height: 100vh;
+  display: flex;
+  // overflow: hidden;
+  .people{
+    width: 100%;
+    // overflow: hidden;
+    background-color: #F6FAFF;
+    .navbar{
+      margin: 1%;
+      width: 98%;
+      height: 10vh;
+
+      ul{
+        margin:6% 1% 0;
+        display: grid;
+        -ms-grid-columns: 14% 14% 14% 14% 14% 14% 14%;
+        grid-template-columns: repeat(7, 14%);
+        list-style-type: none;
+        border-top:1px solid black;
+        border-bottom:1px solid black;
+
+        li{
+          margin:9% 0 0;
+          height: 50%;
+          text-align: center;
+          border-right: rgb(0, 0, 0) 1px solid;
+          font-size: 1.5rem;
+          font-family: 'IM Fell French Canon SC', serif;
+
+          img{
+            margin-top: -50%;
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .two_items{
+      margin: 1%;
+      width: 98%;
+      height: 78vh;
+      display: grid;
+      -ms-grid-columns: 49% 49%;
+      grid-template-columns: repeat(2, 49%);
+      border-bottom: 1px solid black;
+
+      .team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: black 1px solid;
+    
+        p{
+          height: 25%;
+          width: 90%;
+          font-size: 3rem;
+        }
+        img{
+          height: 60%;
+        }
+      }
+    }
+
+    .three_items{
+      margin: 2%;
+      width: 98%;
+      height: 100vh;
+      display: grid;
+      -ms-grid-columns: 32% 32% 32%;
+      grid-template-columns: repeat(3, 32%);
+      border-bottom: 1px solid #000;
+
+      .team{
+        height: 45vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-right: black 1px solid;
+
+        p{
+          height: 25%;
+          width: 100%;
+          font-size: 2rem;
+          margin:0 7%;
+          margin-bottom: -10%;
+        }
+        img{
+          margin:0 10%;
+          width: 80%;
+        }
+      }
+    }
+
+    .four_items{
+      margin: 1%;
+      width: 98%;
+      height: 30%;
+      display: grid;
+      -ms-grid-columns: 24.5% 24.5% 24.5% 24.5%;
+      grid-template-columns: repeat(4, 24.5%);
+      // border-bottom: 1px solid black;
+      .large{
+        grid-column: 2 / 4;    
+      }
+
+      .team{
+        margin: 5% 0;
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: black 1px solid;
+    
+        p{
+          height: 25%;
+          width: 70%;
+          font-size: 1rem;
+        }
+        img{
+          height: 60%;
+        }
+      }
+    }
+
+    .none{
+      border-right: none !important;
+    }
+  }
+}

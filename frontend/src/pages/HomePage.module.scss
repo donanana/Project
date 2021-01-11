@@ -1,0 +1,173 @@
+// ========== Home ===================================================
+
+
+.homepage{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./compass.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  
+    header {
+      display: flex;
+      height: 5%;
+      background-color: #879ebb5e;
+      background-position: center;
+    
+      .welcome {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family:Impact, fantasy;
+        letter-spacing: 2px;
+        font-size: 2em;
+        padding:0 20px 0 70px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+        }
+    
+        nav {
+          display: inline-flex;
+          justify-content: space-between;
+          width: 80%;
+          font-family:Courier, monospace;
+  
+          ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+    
+            li {
+              padding:14px;
+            }
+          }
+        }
+    
+    }
+    
+    section{
+      height: 82%;
+      width: 100%;
+      display: flex;
+    
+      #compass{
+        cursor: pointer;  
+        margin: 1%;
+        color: rgb(250, 245, 245);
+  
+        img{
+          width:100px;
+        }
+  
+        .iconify{
+          font-size: 80px;
+        }
+        p{
+          letter-spacing: 1px;
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+  
+      #demo{
+        width: 70%;
+        height: 95%;
+      }
+    
+      .demo{
+        margin-top: 3%;
+        margin-left: 12%;
+        width: 80%;
+        height: 73%;
+        background-color: #3579aa63;
+        border: solid rgb(92, 90, 90);
+        border-width: 2px;
+        border-radius: 1%;
+        .close {
+          font-size: 23px;
+          margin: 5px;
+          color: #000;
+          cursor: pointer;
+        }
+        .iconify{
+          font-size: 21px;
+          margin: 5px;
+          float:right;
+    
+        }
+        .frame{
+        margin: 0;
+         width: 199%;
+        height: 186%;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        }
+      }
+    
+      #description{
+        width: 30%;
+        height: 95%;
+      }
+    
+      .description{
+        margin-top: 60%;
+        margin-left: 45%;
+        width: 85%;
+        height: 45%;
+        background-color: #3579aa63;
+        border: solid rgb(92, 90, 90);
+        border-width: 2px;
+        border-radius: 1%;
+        .close {
+          font-size: 20px;
+          margin: 5px;
+          color: #000;
+          cursor: pointer;
+        }
+        .content{
+          width: 100%;
+          height: 90%;
+          background-color: rgba(255, 255, 255, 0.925);
+    
+          h2{
+            font-family: serif;
+            padding: 2% 5%;
+            color: #806148;    
+            font-size: 1.5vw;    
+            letter-spacing: 3px;
+          }
+        }
+    
+      }
+    }
+
+    footer{
+      height: 15%;
+      display: flex;
+      flex-direction: row;
+      background-image:url(./dock.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      justify-content: center;
+      
+      .dock{
+        width: 70%;
+        height: 100%;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        
+        img{
+          align-items: center;
+          width: 70%;
+          margin-top: -32%;  
+          padding:0 20%;
+        }
+      }
+    }
+  }

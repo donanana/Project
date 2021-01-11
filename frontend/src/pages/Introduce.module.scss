@@ -1,0 +1,116 @@
+// ========== Doraemon ================================================
+.doraemon{
+  width: 200%;
+  height: 100vh;
+  display: flex;
+  // overflow: hidden;
+  .introduce{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F6FAFF;
+
+    .header{
+      margin:5% 0 0 5%;
+      width: 95%;
+      height: 30%;
+      display: flex;
+      .name{
+        width: 12%;
+
+        .last_name{
+          font-size: 5rem;
+        }
+
+        .english_name{
+          font-family: 'IM Fell French Canon SC', serif;
+          font-weight: lighter;
+          writing-mode: vertical-rl;
+          text-orientation: upright;
+          font-size: 3rem;
+          color: #4E5873;
+          float: right;
+          margin-right: 15%;
+        }
+      }
+
+      img{
+        margin:0 -2%;
+        width: 10%;
+        height: 100%;
+        z-index: 1;
+      }
+      .menu{
+        height: 80%;
+        margin-left: -5%;
+      }
+    
+      .line{
+        width: 77%;
+        height: 60%;
+        padding: 8% 0 0 0;
+
+        .first_name{
+          font-size: 5rem;
+        }
+    
+        hr{
+          height:2px;
+          border:none;
+          border-top:2px solid #000000;  
+          width: 95%;
+        }
+
+      }
+    }
+
+    .data{
+      height: 60%;
+      width: 80%;
+      margin:0 20%;
+      display: flex;
+
+      .right{
+        width: 50%;
+        .title{
+          margin: 0;
+          font-size: 4.7rem;
+          font-family: 'IM Fell French Canon SC';
+          text-shadow: 0 0 2px black;
+          color: #F6FAFF;
+        }
+        .about{
+          width: 70%;
+          background-color: #fffcded2;
+          padding: 10% 5%;
+          margin: -5% 7% -7% 2%;
+        }
+        img{
+          margin: -4% 50%;
+        }
+      }
+          
+      ul{
+        height: 100%;
+        width: 40%;
+        margin: 1% 0;
+      }
+
+      li{
+        display: flex;
+        font-size: 1.7rem;
+        font-family: 'IM Fell French Canon SC';
+        font-weight: lighter;
+        margin: 5%;
+
+        hr{
+          height:2px;
+          border:none;
+          border-top:2px dotted #000000;        
+          width: 20%;
+          margin: 5%;
+        }
+      }
+    }
+  }
+}
